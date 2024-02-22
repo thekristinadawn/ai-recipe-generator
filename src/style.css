@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 38px;
   color: #1a3b20;
   text-align: center;
   margin-bottom: 20px;
@@ -25,9 +25,20 @@ header {
   margin: 20px auto;
   max-width: 1100px;
   background: #ffffff;
-  padding: 20px;
+}
+
+.form-container {
+  background-color: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+  padding: 20px;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.6;
 }
 
 form {
@@ -70,6 +81,10 @@ form {
   border-radius: 8px;
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   background-color: #1a3b20;
   color: white;
@@ -88,4 +103,19 @@ a {
 
 a:hover {
   color: #43a047;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

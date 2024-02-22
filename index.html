@@ -15,22 +15,25 @@
       </header>
 
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the main ingredient you want in your recipe"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="form-container">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter an ingredient you want in your 5 ingredients or less recipe"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e. chicken, beef, cheese, rice</div>
+        </div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
-        This was code by
+        This was coded by
         <a gref="https://github.com/thekristinadawn" target="_blank"
           >Kristina Palmer</a
         >
