@@ -13,7 +13,7 @@ function generateRecipe(event) {
   let instructionsInput = document.querySelector("#instructions");
   let apiKey = "bc96c7e4d1otea7a98c0307cfdf6305b";
   let context =
-    "You are a recipe food expert. Your mission is to generate a 5 ingredients or less recipe with high protein. Make sure to follow the user instructions with the ingredient that they want to include. The recipe should be simple. Include at the beginning of recipe what the macros look like for 1 cup serving. ";
+    "You are a recipe food expert. Your mission is to generate a 5 ingredients or less recipe with high protein. Make sure to follow the user instructions with the ingredient that they want to include. The recipe should be simple. Include at the beginning of recipe what the macros look like for 1 cup serving. The recipe must at least 15 grams of protein in 1 cup. No tofu, chickpeas, lentils, quinoa ";
   let prompt = `User instructions: Generate a recipe that includes ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
